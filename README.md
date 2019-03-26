@@ -5,6 +5,6 @@ An eyecatcher React component for the Scrivito CMS.
 Add this line to your index.js:  
 ```import "scrivito-eyecatcher";```  
 
-Open your terminal. 
+Open your terminal.  
 ```$ cd``` to your Scrivito project  
 ```$ npm install scrivito-eyecatcher```
