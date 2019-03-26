@@ -2,5 +2,6 @@
 An eyecatcher React component for the Scrivito CMS.
 
 ## Installation
-Open youre terminal. cd to youre Scrivito project
+Open your terminal. 
+```$ cd``` to your Scrivito project  
 ```$ npm install scrivito-eyecatcher```
