@@ -58,7 +58,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
     },
     rounded: {
       title: 'Rounded corners',
-      description: 'Click on Yes if you want the box to have rounded corners. Default: No',
+      description: 'Click on Yes if you want the box to have rounded corners. Does not apply with no shadow. Default: No',
       values: [
         { value: 'yes', title: 'Yes' },
         { value: 'no', title: 'No' },
@@ -72,6 +72,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
         { value: 'no', title: 'No' },
       ],
     },
+
     shadow: {
       title: 'Shadow',
       description: 'Shadow around the box. Default: No',
@@ -107,7 +108,7 @@ Scrivito.provideComponent('EyecatcherParagraphWidget', ({ widget }) => {
   const rounded = widget.get('rounded') || 'no';
   const border = widget.get('border') || 'no';
   const shadow = widget.get('shadow') || 'no';
-  const textSize = widget.get('textSize');
+  const textSize = widget.get('textSize') || 'h3';
 
 
   if (rounded === 'yes')
