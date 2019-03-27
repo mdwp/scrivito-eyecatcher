@@ -4,7 +4,7 @@
   margin: 40px auto;
   width: 33vw;
   height: 3px;
-  background: #000;
+  background: #333;
 }
 
 .deco-border:after {
@@ -13,14 +13,14 @@
   margin: 40px auto;
   width: 33vw;
   height: 3px;
-  background: #000;
+  background: #333;
 }
 
 .eyecatcher {
   color: #333
 }
 
-.rounded {
+.box-round {
   border-radius: 12px !important;
 }
 

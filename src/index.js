@@ -6,7 +6,7 @@ const EyecatcherParagraphWidget = Scrivito.provideWidgetClass('EyecatcherParagra
     text: 'html',
     textSize: ['enum', { values: ['h1', 'h2', 'h3'] }],
     border: ['enum', { values: ['yes', 'no'] }],
-    shadow: ['enum', { values: ['small', 'large'] }],
+    shadow: ['enum', { values: ['small', 'large', 'no'] }],
     rounded: ['enum', { values: ['yes', 'no'] }],
     backgroundColor: [
       'enum',
@@ -52,13 +52,13 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
         { value: 'greydark', title: 'Dark grey' },
         { value: 'brand-primary', title: 'Primary color' },
         { value: 'brand-secondary', title: 'Secondary color' },
-        { value: 'transparent', title: 'No color' },
+        { value: 'transparent', title: 'No color (Transparent)' },
 
       ],
     },
     rounded: {
       title: 'Rounded corners',
-      description: 'Click on Yes if you want the box to have rounded corners. Default: no',
+      description: 'Click on Yes if you want the box to have rounded corners. Default: No',
       values: [
         { value: 'yes', title: 'Yes' },
         { value: 'no', title: 'No' },
@@ -74,8 +74,9 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
     },
     shadow: {
       title: 'Shadow',
-      description: 'Shadow around the box. Default: no',
+      description: 'Shadow around the box. Default: No',
       values: [
+        { value: 'no', title: 'No' },
         { value: 'small', title: 'Small' },
         { value: 'large', title: 'Large' },
       ],
@@ -92,7 +93,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
   initialContent: {
     textSize: 'h3',
     border: 'no',
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     rounded: 'no',
 
   },
@@ -103,14 +104,14 @@ Scrivito.provideComponent('EyecatcherParagraphWidget', ({ widget }) => {
 
   let backgroundColor = widget.get('backgroundColor') || 'transparent';
 
-  const rounded = widget.get('rounded');
-  const border = widget.get('border');
-  const shadow = widget.get('shadow');
+  const rounded = widget.get('rounded') || 'no';
+  const border = widget.get('border') || 'no';
+  const shadow = widget.get('shadow') || 'no';
   const textSize = widget.get('textSize');
 
 
   if (rounded === 'yes')
-    classNames.push('rounded');
+    classNames.push('box-round');
   if (shadow === 'small')
     classNames.push('shadow');
   else if (shadow === 'large')
