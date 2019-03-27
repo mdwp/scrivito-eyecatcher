@@ -33,15 +33,6 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
   description: 'Eyecatcher Paragraph Text',
 
   attributes: {
-    alignment: {
-      title: 'Alignment',
-      description: 'Default: Left',
-      values: [
-        { value: 'left', title: 'Left' },
-        { value: 'center', title: 'Center' },
-        { value: 'right', title: 'Right' },
-      ],
-    },
     textSize: {
       title: 'Text size',
       description: 'Default: Small',
@@ -93,7 +84,6 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
     },
   },
   properties: [
-    'alignment',
     'textSize',
     'border',
     'shadow',
@@ -102,10 +92,8 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
 
   ],
   initialContent: {
-    alignment: 'left',
     textSize: 'h3',
     border: 'no',
-    useGradient: 'no',
     backgroundColor: 'white',
     rounded: 'no',
 
@@ -116,7 +104,7 @@ Scrivito.provideComponent('EyecatcherParagraphWidget', ({ widget }) => {
   const classNames = [];
 
   let backgroundColor = widget.get('backgroundColor') || 'transparent';
-  const gradient = widget.get('useGradient');
+
   const rounded = widget.get('rounded');
   const border = widget.get('border');
   const shadow = widget.get('shadow');
@@ -134,9 +122,9 @@ Scrivito.provideComponent('EyecatcherParagraphWidget', ({ widget }) => {
 
 
   classNames.push(`bg-${backgroundColor}`);
-  if (widget.get('alignment')) {
-    classNames.push(`text-${widget.get('alignment')}`);
-  }
+
+  classNames.push('text-center');
+
   classNames.push(`${textSize}`);
 
   return (<Scrivito.ContentTag tag="p"
