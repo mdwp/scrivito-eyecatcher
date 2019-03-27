@@ -1,12 +1,10 @@
 import * as Scrivito from 'scrivito';
 import * as React from 'react';
-import './index.css'
 
 const EyecatcherParagraphWidget = Scrivito.provideWidgetClass('EyecatcherParagraphWidget', {
   attributes: {
     text: 'html',
     textSize: ['enum', { values: ['h1', 'h2', 'h3'] }],
-    alignment: ['enum', { values: ['left', 'center', 'right'] }],
     border: ['enum', { values: ['yes', 'no'] }],
     shadow: ['enum', { values: ['small', 'large'] }],
     rounded: ['enum', { values: ['yes', 'no'] }],
@@ -101,7 +99,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
 });
 
 Scrivito.provideComponent('EyecatcherParagraphWidget', ({ widget }) => {
-  const classNames = [];
+  const classNames = ['eyecatcher'];
 
   let backgroundColor = widget.get('backgroundColor') || 'transparent';
 

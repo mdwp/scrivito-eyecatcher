@@ -16,6 +16,10 @@
   background: #000;
 }
 
+.eyecatcher {
+  color: #333
+}
+
 .rounded {
   border-radius: 12px !important;
 }
