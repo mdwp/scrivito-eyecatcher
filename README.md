@@ -7,13 +7,14 @@ An eyecatcher React component/Scrivito widget for the Scrivito CMS.
 
 Open your terminal.
 
-```$ cd``` to your Scrivito project
+`$ cd` to your Scrivito project
 
 ```
 $ npm install scrivito-eyecatcher
 ```
 
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):
+Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
+
 Add this line to your index.js:
 
 ```
@@ -29,7 +30,7 @@ import "scrivito-eyecatcher/index.css";
 Or by including the styling to your style sheets (e.g. in `index.scss`):
 
 ```scss
-@import "~scrivito-eyecatcher/index.css";
+import "~scrivito-eyecatcher/index.css";
 ```
 
 ## Features
