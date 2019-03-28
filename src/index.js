@@ -87,14 +87,14 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
     'textSize',
     'border',
     'shadow',
-    'backgroundColor',
     'rounded',
-
+    'backgroundColor',
   ],
   initialContent: {
     textSize: 'h3',
     border: 'no',
     backgroundColor: 'transparent',
+    shadow: 'no',
     rounded: 'no',
 
   },

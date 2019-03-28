@@ -1,6 +1,6 @@
 {
   "name": "scrivito-eyecatcher",
-  "version": "1.0.7",
+  "version": "1.0.3",
   "description": "An eyecatcher React component for the Scrivito CMS.",
   "main": "index.js",
   "peerDependencies": {
