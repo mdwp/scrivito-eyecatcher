@@ -66,7 +66,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
     },
     border: {
       title: 'Border',
-      description: 'Click on Yes if you want the box to have decoration borders on top and bottom inside the box.',
+      description: 'Decoration borders on top and bottom inside the box. Default: Yes',
       values: [
         { value: 'yes', title: 'Yes' },
         { value: 'no', title: 'No' },
@@ -92,7 +92,7 @@ Scrivito.provideEditingConfig('EyecatcherParagraphWidget', {
   ],
   initialContent: {
     textSize: 'h3',
-    border: 'no',
+    border: 'yes',
     backgroundColor: 'transparent',
     shadow: 'no',
     rounded: 'no',

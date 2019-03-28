@@ -1,16 +1,25 @@
 # Scrivito Eyecatcher
-[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Travis build status](https://travis-ci.org/apepper/scrivito-youtube-video-widget.svg?branch=master)](https://travis-ci.org/apepper/scrivito-youtube-video-widget) [![GitHub last commit](https://img.shields.io/github/last-commit/apepper/scrivito-youtube-video-widget.svg)](https://github.com/apepper/scrivito-youtube-video-widget) [![GitHub top language](https://img.shields.io/github/languages/top/
+[![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-An eyecatcher React component for the Scrivito CMS.
+An eyecatcher React component/Scrivito widget for the Scrivito CMS.
 
 ## Installation
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):
-Add this line to your index.js:
-```import "scrivito-eyecatcher";```
 
 Open your terminal.
-```$ cd``` to your Scrivito project
-```$ npm install scrivito-eyecatcher```
+
+`$ cd` to your Scrivito project
+
+```
+$ npm install scrivito-eyecatcher
+```
+
+Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
+
+Add this line to your index.js:
+
+```
+import "scrivito-eyecatcher";
+```
 
 Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):
 
@@ -21,7 +30,7 @@ import "scrivito-eyecatcher/index.css";
 Or by including the styling to your style sheets (e.g. in `index.scss`):
 
 ```scss
-@import "~scrivito-eyecatcher/index.css";
+import "~scrivito-eyecatcher/index.css";
 ```
 
 ## Features
