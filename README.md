@@ -4,28 +4,28 @@
 An eyecatcher React component for the Scrivito CMS.
 
 ## Installation
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):
-Add this line to your index.js:
+Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`):  
+Add this line to your index.js:  
 ```import "scrivito-eyecatcher";```
 
-Open your terminal.
-```$ cd``` to your Scrivito project
+Open your terminal.  
+```$ cd``` to your Scrivito project  
 ```$ npm install scrivito-eyecatcher```
 
-Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):
+Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):  
 
 ```
-import "scrivito-eyecatcher/index.css";
+import "scrivito-eyecatcher/index.css";  
 ```
 
-Or by including the styling to your style sheets (e.g. in `index.scss`):
+Or by including the styling to your style sheets (e.g. in `index.scss`):  
 
 ```scss
 @import "~scrivito-eyecatcher/index.css";
 ```
 
 ## Features
-The Scrivito Eyecatcher Widget renders a p tag, with optional borders, shadows and background colors.
+The Scrivito Eyecatcher Widget renders a p tag, with optional borders, shadows and background colors.  
 Text can be edit inline. The properties are configurable via the Widget form.
 
 ## Development
