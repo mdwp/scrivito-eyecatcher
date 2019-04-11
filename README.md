@@ -3,6 +3,10 @@
 
 An eyecatcher React component/Scrivito widget for the Scrivito CMS.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-eyecatcher/master/eyecatcher-screenshot.png)
+
 ## Installation
 
 Open your terminal.
