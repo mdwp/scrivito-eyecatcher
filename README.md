@@ -38,34 +38,16 @@ import "~scrivito-eyecatcher/index.css";
 ```
 
 ## Features
-The Scrivito Eyecatcher Widget renders a p tag, with optional borders, shadows and background colors.
-Text can be edit inline. The properties are configurable via the Widget form.
+The Scrivito Eyecatcher Widget renders a blockquote tag, with optional borders, shadows and background colors.
+Text can be edit inline.
 
-## Development
+## Widget properties
 
-With `npm run build` you can build the package into `build/`.
+In the widget properties you can set:
 
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-eyecatcher/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
-
-## Check code quality
-
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
-
+- Text size
+- Border
+- Shadow
+- Alignment
+- Rounded Borders
+- Background color
