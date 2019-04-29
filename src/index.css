@@ -20,6 +20,21 @@
   color: #666 !important;
 }
 
+.p-small {
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.p-medium {
+  font-size: 34px;
+  line-height: 125%;
+}
+
+.p-large {
+  font-size: 44px;
+  line-height: 125%;
+}
+
 .box-round {
   border-radius: 12px !important;
 }

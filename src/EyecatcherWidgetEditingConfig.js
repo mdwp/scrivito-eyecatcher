@@ -26,34 +26,22 @@ Scrivito.provideEditingConfig('EyecatcherWidget', {
 
         backgroundColor: {
             title: 'Background color',
-            description: 'Does not apply if a background image is set. Default: Transparent',
+            description: 'Default: Transparent',
             values: [
-                { value: 'white', title: 'White' },
-                { value: 'greywhite', title: 'White grey' },
-                { value: 'greylight', title: 'Light grey' },
-                { value: 'greymiddle', title: 'Grey' },
-                { value: 'greydark', title: 'Dark grey' },
+                { value: 'success', title: 'Success' },
+                { value: 'info', title: 'Info' },
+                { value: 'warning', title: 'Warning' },
+                { value: 'danger', title: 'Danger' },
                 { value: 'primary', title: 'Primary color' },
                 { value: 'secondary', title: 'Secondary color' },
-                { value: 'accent', title: 'Accent color' },
-                { value: 'dark-color', title: 'Theme dark color' },
-                { value: 'light-color', title: 'Theme light color' },
-                { value: 'transparent', title: 'No color' },
+                { value: 'transparent', title: 'Transparent' },
 
-            ],
-        },
-        useGradient: {
-            title: 'Gradient',
-            description: 'Default: no',
-            values: [
-                { value: 'yes', title: 'Yes' },
-                { value: 'no', title: 'No' },
             ],
         },
 
         rounded: {
             title: 'Rounded corners',
-            description: 'Click on Yes if you want the button to have rounded corners. Default: no',
+            description: 'Click on Yes if you want the box to have rounded corners. Default: no',
             values: [
                 { value: 'yes', title: 'Yes' },
                 { value: 'no', title: 'No' },
@@ -82,7 +70,6 @@ Scrivito.provideEditingConfig('EyecatcherWidget', {
         'border',
         'shadow',
         'backgroundColor',
-        'useGradient',
         'rounded',
 
     ],
@@ -90,8 +77,7 @@ Scrivito.provideEditingConfig('EyecatcherWidget', {
         alignment: 'left',
         textSize: 'small',
         border: 'no',
-        useGradient: 'no',
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         rounded: 'no',
 
     },

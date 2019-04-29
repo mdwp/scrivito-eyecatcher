@@ -1,5 +1,4 @@
 import * as Scrivito from 'scrivito';
-import { registerTextExtract } from '../../utils/textExtractRegistry';
 
 const EyecatcherWidget = Scrivito.provideWidgetClass('EyecatcherWidget', {
     attributes: {
@@ -14,16 +13,12 @@ const EyecatcherWidget = Scrivito.provideWidgetClass('EyecatcherWidget', {
             'enum',
             {
                 values: [
-                    'white',
-                    'greywhite',
-                    'greylight',
-                    'greymiddle',
-                    'greydark',
+                    'success',
+                    'danger',
+                    'warning',
+                    'info',
                     'primary',
                     'secondary',
-                    'accent',
-                    'dark-color',
-                    'light-color',
                     'transparent'
 
 
@@ -35,7 +30,5 @@ const EyecatcherWidget = Scrivito.provideWidgetClass('EyecatcherWidget', {
     },
 });
 
-registerTextExtract('EyecatcherWidget', [
-    { attribute: 'text', type: 'html' },
-]);
+
 export default EyecatcherWidget;

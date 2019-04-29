@@ -54,8 +54,5 @@
     "start": "webpack --watch --mode development",
     "eslint": "eslint --max-warnings 1 src/",
     "es-check": "npm run build && es-check es5 './build/**/*.js'"
-  },
-  "dependencies": {
-    "scrivito-adv-button": "file:../../scrivito-adv-button-1.0.4.tgz"
   }
 }

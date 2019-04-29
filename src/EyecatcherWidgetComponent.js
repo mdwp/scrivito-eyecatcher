@@ -5,7 +5,6 @@ Scrivito.provideComponent('EyecatcherWidget', ({ widget }) => {
     const classNames = [];
 
     let backgroundColor = widget.get('backgroundColor') || 'transparent';
-    const gradient = widget.get('useGradient');
     const rounded = widget.get('rounded');
     const border = widget.get('border');
     const shadow = widget.get('shadow');
@@ -13,7 +12,7 @@ Scrivito.provideComponent('EyecatcherWidget', ({ widget }) => {
 
 
     if (rounded === 'yes')
-        classNames.push('rounded');
+        classNames.push('box-round');
     if (shadow === 'small')
         classNames.push('shadow');
     else if (shadow === 'large')
@@ -21,9 +20,6 @@ Scrivito.provideComponent('EyecatcherWidget', ({ widget }) => {
     if (border === 'yes')
         classNames.push('deco-border');
 
-    if (gradient === 'yes')
-        classNames.push(`bg-gradient-${backgroundColor}`);
-    else
         classNames.push(`bg-${backgroundColor}`);
     if (widget.get('alignment')) {
         classNames.push(`text-${widget.get('alignment')}`);
